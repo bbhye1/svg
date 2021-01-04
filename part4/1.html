@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    .shapes {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background: #ddd;
+    }
+
+    text {
+      font-size: 1.5rem;
+      fill: red;
+
+    }
+
+    path {
+      stroke: teal;
+      fill: transparent;
+    }
+
+    tspan {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  </div>
+  <svg class="shapes">
+    <defs>
+      <path id="text-curve" d="M 100 150 C 100 150, 300 50, 500 250 " />
+    </defs>
+    <text x="20" y="50">
+      <textPath href="#text-curve">
+        Lorem <tspan>ipsum</tspan> dolor sit amet consectetur adipisicing elit.
+      </textPath>
+    </text>
+  </svg>
+</body>
+
+</html>
